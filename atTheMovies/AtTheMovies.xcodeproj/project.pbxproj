@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C46C07F71913148A0058B588 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46C07F61913148A0058B588 /* Foundation.framework */; };
+		C46C07F91913148A0058B588 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46C07F81913148A0058B588 /* CoreGraphics.framework */; };
+		C46C07FB1913148A0058B588 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46C07FA1913148A0058B588 /* UIKit.framework */; };
+		C46C08011913148A0058B588 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C46C07FF1913148A0058B588 /* InfoPlist.strings */; };
+		C46C08031913148A0058B588 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C46C08021913148A0058B588 /* main.m */; };
+		C46C08071913148A0058B588 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C46C08061913148A0058B588 /* AppDelegate.m */; };
+		C46C080A1913148A0058B588 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C46C08081913148A0058B588 /* Main.storyboard */; };
+		C46C080D1913148A0058B588 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C46C080C1913148A0058B588 /* ViewController.m */; };
+		C46C080F1913148A0058B588 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C46C080E1913148A0058B588 /* Images.xcassets */; };
+		C46C08161913148A0058B588 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46C08151913148A0058B588 /* XCTest.framework */; };
+		C46C08171913148A0058B588 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46C07F61913148A0058B588 /* Foundation.framework */; };
+		C46C08181913148A0058B588 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46C07FA1913148A0058B588 /* UIKit.framework */; };
+		C46C08201913148A0058B588 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C46C081E1913148A0058B588 /* InfoPlist.strings */; };
+		C46C08221913148A0058B588 /* AtTheMoviesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C46C08211913148A0058B588 /* AtTheMoviesTests.m */; };
+		C46C0830191316870058B588 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C46C082F191316870058B588 /* MovieCell.m */; };
+		C46C0833191316BD0058B588 /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = C46C0832191316BD0058B588 /* DetailView.m */; };
+		C46C0836191316DB0058B588 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = C46C0835191316DB0058B588 /* VideoView.m */; };
+		C46C0839191320360058B588 /* MovieInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C46C0838191320360058B588 /* MovieInfo.m */; };
+		C46C083C191320440058B588 /* TheatreInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C46C083B191320440058B588 /* TheatreInfo.m */; };
+		C46C083E1913350F0058B588 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46C083D1913350F0058B588 /* MediaPlayer.framework */; };
+		C46C08A719135C0E0058B588 /* batman.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C089119135C0E0058B588 /* batman.jpeg */; };
+		C46C08A819135C0E0058B588 /* batman.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C46C089219135C0E0058B588 /* batman.mp4 */; };
+		C46C08A919135C0E0058B588 /* batman2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C46C089319135C0E0058B588 /* batman2.mp4 */; };
+		C46C08AA19135C0E0058B588 /* dameToKill.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C46C089419135C0E0058B588 /* dameToKill.mp4 */; };
+		C46C08AB19135C0E0058B588 /* darkKnight.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C46C089519135C0E0058B588 /* darkKnight.mp4 */; };
+		C46C08AC19135C0E0058B588 /* darkKnightRises.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C46C089619135C0E0058B588 /* darkKnightRises.mp4 */; };
+		C46C08AD19135C0E0058B588 /* elMariachi.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C089719135C0E0058B588 /* elMariachi.jpeg */; };
+		C46C08AE19135C0E0058B588 /* grindHouse.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C089819135C0E0058B588 /* grindHouse.jpeg */; };
+		C46C08AF19135C0E0058B588 /* kevinHart.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C46C089919135C0E0058B588 /* kevinHart.jpg */; };
+		C46C08B019135C0E0058B588 /* letMeExplain.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C089A19135C0E0058B588 /* letMeExplain.jpeg */; };
+		C46C08B119135C0E0058B588 /* machete.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C089B19135C0E0058B588 /* machete.jpeg */; };
+		C46C08B219135C0E0058B588 /* macheteKills.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C089C19135C0E0058B588 /* macheteKills.jpeg */; };
+		C46C08B319135C0E0058B588 /* rideAlong.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C46C089D19135C0E0058B588 /* rideAlong.jpg */; };
+		C46C08B419135C0E0058B588 /* rideAlong.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C46C089E19135C0E0058B588 /* rideAlong.mp4 */; };
+		C46C08B519135C0E0058B588 /* rideAlong2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C089F19135C0E0058B588 /* rideAlong2.jpeg */; };
+		C46C08B619135C0E0058B588 /* rideAlongPic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C46C08A019135C0E0058B588 /* rideAlongPic.jpg */; };
+		C46C08B719135C0E0058B588 /* robertRod.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C08A119135C0E0058B588 /* robertRod.jpeg */; };
+		C46C08B819135C0E0058B588 /* sinCity.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C08A219135C0E0058B588 /* sinCity.jpeg */; };
+		C46C08B919135C0E0058B588 /* sinCIty.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C46C08A319135C0E0058B588 /* sinCIty.mp4 */; };
+		C46C08BA19135C0E0058B588 /* sinCity2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C08A419135C0E0058B588 /* sinCity2.jpeg */; };
+		C46C08BB19135C0E0058B588 /* thinkLike.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C08A519135C0E0058B588 /* thinkLike.jpeg */; };
+		C46C08BC19135C0E0058B588 /* thinkLike2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C46C08A619135C0E0058B588 /* thinkLike2.jpg */; };
+		C46C08C219135DA00058B588 /* batman2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C08BE19135DA00058B588 /* batman2.jpeg */; };
+		C46C08C319135DA00058B588 /* batman3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C08BF19135DA00058B588 /* batman3.jpeg */; };
+		C46C08C419135DA00058B588 /* darkKnight.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C08C019135DA00058B588 /* darkKnight.jpeg */; };
+		C46C08C519135DA00058B588 /* darkKnight2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C08C119135DA00058B588 /* darkKnight2.jpeg */; };
+		C46C08C719135DE60058B588 /* darkKnight3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = C46C08C619135DE60058B588 /* darkKnight3.jpeg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C46C08191913148A0058B588 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C46C07EB1913148A0058B588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C46C07F21913148A0058B588;
+			remoteInfo = AtTheMovies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C46C07F31913148A0058B588 /* AtTheMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AtTheMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C46C07F61913148A0058B588 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C46C07F81913148A0058B588 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C46C07FA1913148A0058B588 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C46C07FE1913148A0058B588 /* AtTheMovies-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AtTheMovies-Info.plist"; sourceTree = "<group>"; };
+		C46C08001913148A0058B588 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C46C08021913148A0058B588 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C46C08041913148A0058B588 /* AtTheMovies-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AtTheMovies-Prefix.pch"; sourceTree = "<group>"; };
+		C46C08051913148A0058B588 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C46C08061913148A0058B588 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C46C08091913148A0058B588 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C46C080B1913148A0058B588 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C46C080C1913148A0058B588 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C46C080E1913148A0058B588 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C46C08141913148A0058B588 /* AtTheMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AtTheMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C46C08151913148A0058B588 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		C46C081D1913148A0058B588 /* AtTheMoviesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AtTheMoviesTests-Info.plist"; sourceTree = "<group>"; };
+		C46C081F1913148A0058B588 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C46C08211913148A0058B588 /* AtTheMoviesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AtTheMoviesTests.m; sourceTree = "<group>"; };
+		C46C082E191316870058B588 /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		C46C082F191316870058B588 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		C46C0831191316BD0058B588 /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
+		C46C0832191316BD0058B588 /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
+		C46C0834191316DB0058B588 /* VideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoView.h; sourceTree = "<group>"; };
+		C46C0835191316DB0058B588 /* VideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
+		C46C0837191320360058B588 /* MovieInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieInfo.h; sourceTree = "<group>"; };
+		C46C0838191320360058B588 /* MovieInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieInfo.m; sourceTree = "<group>"; };
+		C46C083A191320440058B588 /* TheatreInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheatreInfo.h; sourceTree = "<group>"; };
+		C46C083B191320440058B588 /* TheatreInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheatreInfo.m; sourceTree = "<group>"; };
+		C46C083D1913350F0058B588 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		C46C089119135C0E0058B588 /* batman.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batman.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C089219135C0E0058B588 /* batman.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = batman.mp4; sourceTree = SOURCE_ROOT; };
+		C46C089319135C0E0058B588 /* batman2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = batman2.mp4; sourceTree = SOURCE_ROOT; };
+		C46C089419135C0E0058B588 /* dameToKill.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dameToKill.mp4; sourceTree = SOURCE_ROOT; };
+		C46C089519135C0E0058B588 /* darkKnight.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = darkKnight.mp4; sourceTree = SOURCE_ROOT; };
+		C46C089619135C0E0058B588 /* darkKnightRises.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = darkKnightRises.mp4; sourceTree = SOURCE_ROOT; };
+		C46C089719135C0E0058B588 /* elMariachi.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = elMariachi.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C089819135C0E0058B588 /* grindHouse.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grindHouse.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C089919135C0E0058B588 /* kevinHart.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kevinHart.jpg; sourceTree = SOURCE_ROOT; };
+		C46C089A19135C0E0058B588 /* letMeExplain.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = letMeExplain.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C089B19135C0E0058B588 /* machete.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = machete.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C089C19135C0E0058B588 /* macheteKills.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = macheteKills.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C089D19135C0E0058B588 /* rideAlong.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rideAlong.jpg; sourceTree = SOURCE_ROOT; };
+		C46C089E19135C0E0058B588 /* rideAlong.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = rideAlong.mp4; sourceTree = SOURCE_ROOT; };
+		C46C089F19135C0E0058B588 /* rideAlong2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rideAlong2.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C08A019135C0E0058B588 /* rideAlongPic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rideAlongPic.jpg; sourceTree = SOURCE_ROOT; };
+		C46C08A119135C0E0058B588 /* robertRod.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = robertRod.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C08A219135C0E0058B588 /* sinCity.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sinCity.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C08A319135C0E0058B588 /* sinCIty.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sinCIty.mp4; sourceTree = SOURCE_ROOT; };
+		C46C08A419135C0E0058B588 /* sinCity2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sinCity2.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C08A519135C0E0058B588 /* thinkLike.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thinkLike.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C08A619135C0E0058B588 /* thinkLike2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = thinkLike2.jpg; sourceTree = SOURCE_ROOT; };
+		C46C08BE19135DA00058B588 /* batman2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batman2.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C08BF19135DA00058B588 /* batman3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = batman3.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C08C019135DA00058B588 /* darkKnight.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkKnight.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C08C119135DA00058B588 /* darkKnight2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkKnight2.jpeg; sourceTree = SOURCE_ROOT; };
+		C46C08C619135DE60058B588 /* darkKnight3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkKnight3.jpeg; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C46C07F01913148A0058B588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46C083E1913350F0058B588 /* MediaPlayer.framework in Frameworks */,
+				C46C07F91913148A0058B588 /* CoreGraphics.framework in Frameworks */,
+				C46C07FB1913148A0058B588 /* UIKit.framework in Frameworks */,
+				C46C07F71913148A0058B588 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C46C08111913148A0058B588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46C08161913148A0058B588 /* XCTest.framework in Frameworks */,
+				C46C08181913148A0058B588 /* UIKit.framework in Frameworks */,
+				C46C08171913148A0058B588 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C46C07EA1913148A0058B588 = {
+			isa = PBXGroup;
+			children = (
+				C46C07FC1913148A0058B588 /* AtTheMovies */,
+				C46C081B1913148A0058B588 /* AtTheMoviesTests */,
+				C46C07F51913148A0058B588 /* Frameworks */,
+				C46C07F41913148A0058B588 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C46C07F41913148A0058B588 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C46C07F31913148A0058B588 /* AtTheMovies.app */,
+				C46C08141913148A0058B588 /* AtTheMoviesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C46C07F51913148A0058B588 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C46C083D1913350F0058B588 /* MediaPlayer.framework */,
+				C46C07F61913148A0058B588 /* Foundation.framework */,
+				C46C07F81913148A0058B588 /* CoreGraphics.framework */,
+				C46C07FA1913148A0058B588 /* UIKit.framework */,
+				C46C08151913148A0058B588 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C46C07FC1913148A0058B588 /* AtTheMovies */ = {
+			isa = PBXGroup;
+			children = (
+				C46C08BD19135C400058B588 /* img/vid */,
+				C46C08051913148A0058B588 /* AppDelegate.h */,
+				C46C08061913148A0058B588 /* AppDelegate.m */,
+				C46C08081913148A0058B588 /* Main.storyboard */,
+				C46C080B1913148A0058B588 /* ViewController.h */,
+				C46C080C1913148A0058B588 /* ViewController.m */,
+				C46C080E1913148A0058B588 /* Images.xcassets */,
+				C46C07FD1913148A0058B588 /* Supporting Files */,
+				C46C082E191316870058B588 /* MovieCell.h */,
+				C46C082F191316870058B588 /* MovieCell.m */,
+				C46C0831191316BD0058B588 /* DetailView.h */,
+				C46C0832191316BD0058B588 /* DetailView.m */,
+				C46C0834191316DB0058B588 /* VideoView.h */,
+				C46C0835191316DB0058B588 /* VideoView.m */,
+				C46C0837191320360058B588 /* MovieInfo.h */,
+				C46C0838191320360058B588 /* MovieInfo.m */,
+				C46C083A191320440058B588 /* TheatreInfo.h */,
+				C46C083B191320440058B588 /* TheatreInfo.m */,
+			);
+			path = AtTheMovies;
+			sourceTree = "<group>";
+		};
+		C46C07FD1913148A0058B588 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C46C07FE1913148A0058B588 /* AtTheMovies-Info.plist */,
+				C46C07FF1913148A0058B588 /* InfoPlist.strings */,
+				C46C08021913148A0058B588 /* main.m */,
+				C46C08041913148A0058B588 /* AtTheMovies-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C46C081B1913148A0058B588 /* AtTheMoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				C46C08211913148A0058B588 /* AtTheMoviesTests.m */,
+				C46C081C1913148A0058B588 /* Supporting Files */,
+			);
+			path = AtTheMoviesTests;
+			sourceTree = "<group>";
+		};
+		C46C081C1913148A0058B588 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C46C081D1913148A0058B588 /* AtTheMoviesTests-Info.plist */,
+				C46C081E1913148A0058B588 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C46C08BD19135C400058B588 /* img/vid */ = {
+			isa = PBXGroup;
+			children = (
+				C46C08C119135DA00058B588 /* darkKnight2.jpeg */,
+				C46C08C019135DA00058B588 /* darkKnight.jpeg */,
+				C46C08BF19135DA00058B588 /* batman3.jpeg */,
+				C46C08BE19135DA00058B588 /* batman2.jpeg */,
+				C46C08C619135DE60058B588 /* darkKnight3.jpeg */,
+				C46C089119135C0E0058B588 /* batman.jpeg */,
+				C46C089219135C0E0058B588 /* batman.mp4 */,
+				C46C089319135C0E0058B588 /* batman2.mp4 */,
+				C46C089419135C0E0058B588 /* dameToKill.mp4 */,
+				C46C089519135C0E0058B588 /* darkKnight.mp4 */,
+				C46C089619135C0E0058B588 /* darkKnightRises.mp4 */,
+				C46C089719135C0E0058B588 /* elMariachi.jpeg */,
+				C46C089819135C0E0058B588 /* grindHouse.jpeg */,
+				C46C089919135C0E0058B588 /* kevinHart.jpg */,
+				C46C089A19135C0E0058B588 /* letMeExplain.jpeg */,
+				C46C089B19135C0E0058B588 /* machete.jpeg */,
+				C46C089C19135C0E0058B588 /* macheteKills.jpeg */,
+				C46C089D19135C0E0058B588 /* rideAlong.jpg */,
+				C46C089E19135C0E0058B588 /* rideAlong.mp4 */,
+				C46C089F19135C0E0058B588 /* rideAlong2.jpeg */,
+				C46C08A019135C0E0058B588 /* rideAlongPic.jpg */,
+				C46C08A119135C0E0058B588 /* robertRod.jpeg */,
+				C46C08A219135C0E0058B588 /* sinCity.jpeg */,
+				C46C08A319135C0E0058B588 /* sinCIty.mp4 */,
+				C46C08A419135C0E0058B588 /* sinCity2.jpeg */,
+				C46C08A519135C0E0058B588 /* thinkLike.jpeg */,
+				C46C08A619135C0E0058B588 /* thinkLike2.jpg */,
+			);
+			name = img/vid;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C46C07F21913148A0058B588 /* AtTheMovies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C46C08251913148A0058B588 /* Build configuration list for PBXNativeTarget "AtTheMovies" */;
+			buildPhases = (
+				C46C07EF1913148A0058B588 /* Sources */,
+				C46C07F01913148A0058B588 /* Frameworks */,
+				C46C07F11913148A0058B588 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AtTheMovies;
+			productName = AtTheMovies;
+			productReference = C46C07F31913148A0058B588 /* AtTheMovies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C46C08131913148A0058B588 /* AtTheMoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C46C08281913148A0058B588 /* Build configuration list for PBXNativeTarget "AtTheMoviesTests" */;
+			buildPhases = (
+				C46C08101913148A0058B588 /* Sources */,
+				C46C08111913148A0058B588 /* Frameworks */,
+				C46C08121913148A0058B588 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C46C081A1913148A0058B588 /* PBXTargetDependency */,
+			);
+			name = AtTheMoviesTests;
+			productName = AtTheMoviesTests;
+			productReference = C46C08141913148A0058B588 /* AtTheMoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C46C07EB1913148A0058B588 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Steven Roseman";
+				TargetAttributes = {
+					C46C08131913148A0058B588 = {
+						TestTargetID = C46C07F21913148A0058B588;
+					};
+				};
+			};
+			buildConfigurationList = C46C07EE1913148A0058B588 /* Build configuration list for PBXProject "AtTheMovies" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C46C07EA1913148A0058B588;
+			productRefGroup = C46C07F41913148A0058B588 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C46C07F21913148A0058B588 /* AtTheMovies */,
+				C46C08131913148A0058B588 /* AtTheMoviesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C46C07F11913148A0058B588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46C08AF19135C0E0058B588 /* kevinHart.jpg in Resources */,
+				C46C08B319135C0E0058B588 /* rideAlong.jpg in Resources */,
+				C46C080F1913148A0058B588 /* Images.xcassets in Resources */,
+				C46C08B019135C0E0058B588 /* letMeExplain.jpeg in Resources */,
+				C46C08C519135DA00058B588 /* darkKnight2.jpeg in Resources */,
+				C46C08B519135C0E0058B588 /* rideAlong2.jpeg in Resources */,
+				C46C08011913148A0058B588 /* InfoPlist.strings in Resources */,
+				C46C08B819135C0E0058B588 /* sinCity.jpeg in Resources */,
+				C46C08AA19135C0E0058B588 /* dameToKill.mp4 in Resources */,
+				C46C08C319135DA00058B588 /* batman3.jpeg in Resources */,
+				C46C08BA19135C0E0058B588 /* sinCity2.jpeg in Resources */,
+				C46C08AC19135C0E0058B588 /* darkKnightRises.mp4 in Resources */,
+				C46C08AE19135C0E0058B588 /* grindHouse.jpeg in Resources */,
+				C46C08AD19135C0E0058B588 /* elMariachi.jpeg in Resources */,
+				C46C08A719135C0E0058B588 /* batman.jpeg in Resources */,
+				C46C08BB19135C0E0058B588 /* thinkLike.jpeg in Resources */,
+				C46C08C719135DE60058B588 /* darkKnight3.jpeg in Resources */,
+				C46C08B619135C0E0058B588 /* rideAlongPic.jpg in Resources */,
+				C46C08B419135C0E0058B588 /* rideAlong.mp4 in Resources */,
+				C46C08AB19135C0E0058B588 /* darkKnight.mp4 in Resources */,
+				C46C08BC19135C0E0058B588 /* thinkLike2.jpg in Resources */,
+				C46C08B919135C0E0058B588 /* sinCIty.mp4 in Resources */,
+				C46C08A919135C0E0058B588 /* batman2.mp4 in Resources */,
+				C46C08A819135C0E0058B588 /* batman.mp4 in Resources */,
+				C46C08C219135DA00058B588 /* batman2.jpeg in Resources */,
+				C46C080A1913148A0058B588 /* Main.storyboard in Resources */,
+				C46C08B719135C0E0058B588 /* robertRod.jpeg in Resources */,
+				C46C08B119135C0E0058B588 /* machete.jpeg in Resources */,
+				C46C08C419135DA00058B588 /* darkKnight.jpeg in Resources */,
+				C46C08B219135C0E0058B588 /* macheteKills.jpeg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C46C08121913148A0058B588 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46C08201913148A0058B588 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C46C07EF1913148A0058B588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46C0839191320360058B588 /* MovieInfo.m in Sources */,
+				C46C083C191320440058B588 /* TheatreInfo.m in Sources */,
+				C46C080D1913148A0058B588 /* ViewController.m in Sources */,
+				C46C08071913148A0058B588 /* AppDelegate.m in Sources */,
+				C46C0833191316BD0058B588 /* DetailView.m in Sources */,
+				C46C0830191316870058B588 /* MovieCell.m in Sources */,
+				C46C0836191316DB0058B588 /* VideoView.m in Sources */,
+				C46C08031913148A0058B588 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C46C08101913148A0058B588 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C46C08221913148A0058B588 /* AtTheMoviesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C46C081A1913148A0058B588 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C46C07F21913148A0058B588 /* AtTheMovies */;
+			targetProxy = C46C08191913148A0058B588 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C46C07FF1913148A0058B588 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C46C08001913148A0058B588 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C46C08081913148A0058B588 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C46C08091913148A0058B588 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C46C081E1913148A0058B588 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C46C081F1913148A0058B588 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C46C08231913148A0058B588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C46C08241913148A0058B588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C46C08261913148A0058B588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AtTheMovies/AtTheMovies-Prefix.pch";
+				INFOPLIST_FILE = "AtTheMovies/AtTheMovies-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C46C08271913148A0058B588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AtTheMovies/AtTheMovies-Prefix.pch";
+				INFOPLIST_FILE = "AtTheMovies/AtTheMovies-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C46C08291913148A0058B588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AtTheMovies.app/AtTheMovies";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AtTheMovies/AtTheMovies-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "AtTheMoviesTests/AtTheMoviesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		C46C082A1913148A0058B588 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AtTheMovies.app/AtTheMovies";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AtTheMovies/AtTheMovies-Prefix.pch";
+				INFOPLIST_FILE = "AtTheMoviesTests/AtTheMoviesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C46C07EE1913148A0058B588 /* Build configuration list for PBXProject "AtTheMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C46C08231913148A0058B588 /* Debug */,
+				C46C08241913148A0058B588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C46C08251913148A0058B588 /* Build configuration list for PBXNativeTarget "AtTheMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C46C08261913148A0058B588 /* Debug */,
+				C46C08271913148A0058B588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C46C08281913148A0058B588 /* Build configuration list for PBXNativeTarget "AtTheMoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C46C08291913148A0058B588 /* Debug */,
+				C46C082A1913148A0058B588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C46C07EB1913148A0058B588 /* Project object */;
+}

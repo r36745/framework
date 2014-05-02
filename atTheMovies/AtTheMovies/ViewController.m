@@ -33,26 +33,26 @@
     MovieInfo *kevinHart1 = [[MovieInfo alloc]init];
     kevinHart1.movieName = @"Think Like A Man";
     kevinHart1.showTimes = @"11:15, 1:45, 6:45, 9:15";
-    kevinHart1.movieTrailer = [[NSBundle mainBundle]pathForResource:@"rideAlong" ofType:@"mp4"];
+    kevinHart1.movieTrailer = [[NSBundle mainBundle]pathForResource:@"thinkLikeAMan" ofType:@"mp4"];
     kevinHart1.imgTrailer = [UIImage imageNamed:@"thinkLike.jpeg"];
     
     MovieInfo *kevinHart2 = [[MovieInfo alloc]init];
     kevinHart2.movieName = @"Think Like A Man 2";
     kevinHart2.showTimes = @"3:45, 5:45, 7:45, 10:15";
-    kevinHart2.movieTrailer = [[NSBundle mainBundle]pathForResource:@"rideAlong" ofType:@"mp4"];
+    kevinHart2.movieTrailer = [[NSBundle mainBundle]pathForResource:@"thinkLikeAManToo" ofType:@"mp4"];
     kevinHart2.imgTrailer = [UIImage imageNamed:@"thinkLike2.jpg"];
     
     MovieInfo *kevinHart3 = [[MovieInfo alloc]init];
-    kevinHart3.movieName = @"Ride Along 2";
+    kevinHart3.movieName = @"About Last Night";
     kevinHart3.showTimes = @"9:15, 11:45, 1:30";
-    kevinHart3.movieTrailer = [[NSBundle mainBundle]pathForResource:@"rideAlong" ofType:@"mp4"];
-    kevinHart3.imgTrailer = [UIImage imageNamed:@"rideAlong2.jpeg"];
+    kevinHart3.movieTrailer = [[NSBundle mainBundle]pathForResource:@"aboutLastNight" ofType:@"mp4"];
+    kevinHart3.imgTrailer = [UIImage imageNamed:@"aboutLastNight.jpg"];
     
     MovieInfo *kevinHart4 = [[MovieInfo alloc]init];
-    kevinHart4.movieName = @"Let Me Explain";
+    kevinHart4.movieName = @"Real Husbands of Hollywood";
     kevinHart4.showTimes = @"1:15, 3:15, 5:15, 7:15";
-    kevinHart4.movieTrailer = [[NSBundle mainBundle]pathForResource:@"rideAlong" ofType:@"mp4"];
-    kevinHart4.imgTrailer = [UIImage imageNamed:@"letMeExplain.jpeg"];
+    kevinHart4.movieTrailer = [[NSBundle mainBundle]pathForResource:@"realHusbands" ofType:@"mp4"];
+    kevinHart4.imgTrailer = [UIImage imageNamed:@"realHusbands.jpg"];
     
     
     
